@@ -1,2 +1,16 @@
-<h1>This is my handlebars homepagess</h1>
-<h2>{{ stuff }}</h2>
+<br/>
+<h1>{{ stock.companyName }} ({{stock.symbol}})</h1><br/>
+
+<b>Latest price: </b>${{ stock.latestPrice }}<br />
+<b>Previous Close: </b>${{ stock.previousClose }}<br />
+<b>Percent Change: </b>{{ stock.changePercent }}%<br />
+<b>Market Cap: </b>${{ stock.marketCap }}<br />
+<b>52 Week High: </b>{{ stock.week52High }}<br />
+<b>52 Week Low: </b>{{ stock.week52Low }}<br />
+
+
+
+<!-- lopping all -->
+<!-- {{#each stock}}
+    {{ @key }} | {{ this }}<br/>
+{{/each}} -->
